@@ -16,6 +16,8 @@ Including another URLconf
 
 from django.urls import path
 
+
 urlpatterns = [
+    path('hello/', helloll)
     # здесь зарегистрируйте вашу view-функцию
 ]

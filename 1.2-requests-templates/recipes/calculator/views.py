@@ -1,4 +1,6 @@
+from django.http import HttpResponse
 from django.shortcuts import render
+
 
 DATA = {
     'omlet': {
@@ -18,6 +20,11 @@ DATA = {
     },
     # можете добавить свои рецепты ;)
 }
+
+
+def helloll(request):
+    return HttpResponse('hello')
+
 
 # Напишите ваш обработчик. Используйте DATA как источник данных
 # Результат - render(request, 'calculator/index.html', context)
